@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+p {
+  font-size: 16px;
+  word-spacing: 3px;
+  line-height: 25px;
+}
+
+.mobile {
+  height: 709px;
+  width: 375px;
+  background-color: hsl(225, 100%, 94%);
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  height: 570px;
+  width: 325px;
+  background-color: white;
+  border-radius: 13px;
+}
+.hero-img {
+  width: 100%;
+  border-radius: 13px 13px 0 0;
+  margin-bottom: 25px;
+}
+.order-text {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.order-text h2 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.order-text p {
+  color: hsl(224, 23%, 55%);
+
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.annual-plan {
+  height: 80px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 13px;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.plan {
+  margin-right: 10px;
+}
+.plan h3 {
+  color: hsl(223, 47%, 23%);
+}
+.plan p {
+  color: hsl(224, 23%, 55%);
+}
+.buttons {
+  margin: 0 25px;
+}
+.payment {
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 13px;
+  width: 275px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  box-shadow: 5px 10px 18px hsl(224, 23%, 55%);
+}
+.payment p {
+  color: white;
+  font-weight: 700;
+}
+.cancel-order {
+  border-radius: 13px;
+  width: 275px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancel-order p {
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+
+/* 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */

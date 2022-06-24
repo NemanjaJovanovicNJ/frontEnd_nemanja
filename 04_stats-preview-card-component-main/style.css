@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  background-color: hsl(233, 47%, 7%);
+  width: 375px;
+  height: 956px;
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 13px;
+  width: 325px;
+  height: 780px;
+}
+
+.work-img {
+  width: 100%;
+  border-radius: 13px 13px 0 0;
+  margin-bottom: 10px;
+}
+
+.main {
+  text-align: center;
+  margin: 0 31px;
+  margin-bottom: 15px;
+}
+
+.main h2 {
+  color: white;
+  margin: 10px;
+}
+
+.main h2 strong {
+  color: hsl(277, 64%, 61%);
+}
+
+.main p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.stats h3 {
+  color: white;
+}
+
+.stats p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.companies {
+  text-align: center;
+}
+.templates {
+  text-align: center;
+}
+.queries {
+  text-align: center;
+}
+
+/* FLEX change of axis  */
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
