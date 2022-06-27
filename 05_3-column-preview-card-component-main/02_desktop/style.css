@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+/* font-family: 'Lexend Deca', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&display=swap");
+/* font-family: 'Big Shoulders Display', cursive; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(16, 15, 15);
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 25px;
+  font-size: 15px;
+  padding: 0 10px;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 700;
+  padding: 0 10px;
+}
+
+.container {
+  background-color: white;
+  width: 1440px;
+  height: 800px;
+  margin: 110px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 920px;
+  height: 500px;
+  display: flex;
+  /* margin: 83.5px 20px; */
+  /* display: grid; */
+  /* grid-template-columns: 1; */
+  /* grid-template-rows: 3; */
+}
+
+.icon {
+  height: 40px;
+  width: 65px;
+  margin-left: 7px;
+}
+
+/* ___________Sedans___________ */
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0px 0px 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+/* ___________Suvs___________ */
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+/* ___________Luxury___________ */
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 10px 10px 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+/*Buttons*/
+
+.learn-more {
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+
+  border: none;
+  height: 45px;
+  width: 150px;
+  border-radius: 40px;
+}
+
+.lm-sedans {
+  color: hsl(31, 77%, 52%);
+}
+.lm-sedans:hover {
+  background-color: hsl(31, 77%, 52%);
+  cursor: pointer;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.lm-suvs {
+  color: hsl(184, 100%, 22%);
+}
+
+.lm-suvs:hover {
+  background-color: hsl(184, 100%, 22%);
+  cursor: pointer;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.lm-luxury {
+  color: hsl(179, 100%, 13%);
+}
+
+.lm-luxury:hover {
+  background-color: hsl(179, 100%, 13%);
+  cursor: pointer;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
