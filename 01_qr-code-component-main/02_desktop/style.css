@@ -6,7 +6,6 @@
 }
 
 body {
-  background-color: hsl(212, 45%, 89%);
   font-family: "Outfit", sans-serif;
   align-items: center;
   justify-content: center;
@@ -14,8 +13,17 @@ body {
   margin: 100px auto;
 }
 
+.container {
+  background-color: hsl(212, 45%, 89%);
+  width: 1440px;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .card {
-  margin: 100px auto;
+  /* margin: 100px auto; */
   width: 320px;
   height: 500px;
   background-color: white;
@@ -49,12 +57,4 @@ body {
   font-weight: 400;
   padding: 0 20px;
   text-align: center;
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }
