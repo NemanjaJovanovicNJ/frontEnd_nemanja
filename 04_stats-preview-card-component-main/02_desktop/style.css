@@ -14,39 +14,47 @@ body {
 
 .container {
   background-color: hsl(233, 47%, 7%);
-  width: 375px;
-  height: 956px;
+  width: 1440px;
+  height: 800px;
   margin: 100px auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 160px 150px;
 }
 
 .card {
   background-color: hsl(244, 38%, 16%);
   border-radius: 13px;
-  width: 325px;
-  height: 780px;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.work-img {
-  width: 100%;
-  border-radius: 13px 13px 0 0;
-  margin-bottom: 30px;
+article {
+  width: 570px;
+  height: 100%;
+  padding: 70px 60px;
+  padding-right: 161px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
 }
 
 .main {
-  text-align: center;
-  margin: 0 31px;
-  margin-bottom: 40px;
+  /* padding-right: 100px; */
+  margin-bottom: 50px;
 }
 
 .main h1 {
   color: white;
-  margin-bottom: 15px;
+  letter-spacing: 2px;
   font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 40px;
 }
 
 .main h1 strong {
@@ -55,16 +63,17 @@ body {
 
 .main p {
   color: hsla(0, 0%, 100%, 0.75);
-  margin: 0 2px;
+
   line-height: 25px;
 }
 
 .stats {
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+
   align-items: center;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-between;
 }
 
 .stats h3 {
@@ -92,12 +101,25 @@ body {
   text-transform: uppercase;
 }
 
-/* FLEX change of axis  */
-
-/* .attribution {
-  font-size: 11px;
-  text-align: center;
+.img-container {
+  position: relative;
+  width: 570px;
+  height: 100%;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
-} */
+
+.work-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 13px 13px 0;
+  z-index: -1;
+}
+.img-color {
+  position: absolute;
+  background-color: hsl(280, 56%, 40%);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 13px 13px 0;
+  opacity: 0.4;
+}
