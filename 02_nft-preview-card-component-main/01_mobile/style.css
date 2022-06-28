@@ -8,35 +8,76 @@
 
 body {
   font-family: "Outfit", sans-serif;
-  background-color: hsl(217, 54%, 11%);
-  width: 375px;
-  height: 667px;
+  background-color: white;
+
   margin: 100px auto;
-  justify-content: center;
+  display: flex;
   align-items: center;
-}
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
+  justify-content: center;
 }
 
 .container {
-  background-color: hsl(216, 50%, 16%);
-  padding: 25px;
-  border-radius: 13px;
+  background-color: hsl(217, 54%, 11%);
+  height: 667px;
+  width: 375px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
-  margin-bottom: 20px;
+  width: 335px;
+  height: 550px;
+  padding: 20px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 13px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .equilibrium-img {
+  width: 295px;
+  height: 295px;
+  position: relative;
+}
+
+.eq-img {
+  display: block;
   width: 100%;
   border-radius: 13px;
+  margin-bottom: 20px;
+}
+
+.img-overlay {
+  background-color: hsl(180, 100%, 50%, 75%);
+  border-radius: 13px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.img-overlay:hover {
+  opacity: 1;
   cursor: pointer;
-  overflow: hidden;
-  position: relative;
+}
+
+.view-img {
+  position: absolute;
+  margin: 50%;
+  height: 40px;
+  width: 40px;
 }
 
 .text {
@@ -45,8 +86,8 @@ body {
 
 .text h2 {
   color: hsl(0, 0%, 100%);
-  font-weight: 400;
-  margin-bottom: 10px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .text p {
@@ -87,9 +128,8 @@ body {
 }
 /* Border and footer */
 .border {
-  clear: both;
   height: 1px;
-  margin: 20px 0;
+  margin: 15px 0;
 
   background-color: hsl(215, 32%, 27%);
 }
@@ -101,16 +141,14 @@ body {
   height: 30px;
   margin-right: 20px;
   margin-top: -5px;
+  border: 1px solid white;
+  border-radius: 30px;
 }
 .footer p {
   color: hsl(215, 51%, 70%);
   font-weight: 300;
 }
 
-/* .footer p:link {
-  color: white;
-  font-weight: 300;
-} */
 a {
   text-decoration: none;
 }
@@ -128,12 +166,9 @@ p a {
 a:hover {
   color: cyan;
 }
-a::content {
-}
-/* .attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+/* .clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
 } */
