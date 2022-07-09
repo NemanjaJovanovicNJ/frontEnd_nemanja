@@ -21,10 +21,10 @@ The designs were created to the following widths:
 - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
 - Weights: 400, 600
 
-### Body
+<!-- ### Body
 
 - Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
-- Weights: 400
+- Weights: 400 -->
 
 ## Icons
 
